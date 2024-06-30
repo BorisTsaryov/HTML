@@ -1,0 +1,145 @@
+html {
+  font-family: cursive;
+  /* background-color: rgba(85, 71, 82, 0.4); */
+  height: 100%;
+}
+
+@keyframes move {
+  from {
+    translate: -100px 0px;
+  }
+  to {
+    translate: 100px 0px;
+  }
+}
+@keyframes koron {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#spiner {
+  width: 200px;
+  display: inline-block;
+
+  margin-left: 23%;
+}
+.spiner {
+  width: 100%;
+  /* animation: koron 5s linear infinite; */
+}
+#korona {
+  animation-name: koron;
+  animation-duration: 4s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.rounded-img {
+  animation: move 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  width: 45%;
+  border-radius: 10%;
+  cursor: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.card {
+  border-radius: 1em;
+  text-align: center;
+  padding: 1em;
+  background-color: azure;
+  margin-bottom: 3em;
+}
+.card:hover {
+  background-color: rgba(221, 21, 171, 0.267);
+  color: aliceblue;
+  /* box-shadow: 5px 5px; */
+}
+input {
+  border: #212192 solid;
+  color-scheme: red;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+}
+input:valid {
+  border-color: rgb(9, 255, 9);
+}
+input:invalid {
+  color: red;
+}
+.btn-primary {
+  transition: all;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+}
+.btn-primary:hover {
+  background-color: aqua;
+  color: black;
+  font-size: 1.1rem;
+}
+.card img {
+  border-radius: 50%;
+  width: 60%;
+  margin: auto;
+}
+.btn-outline-success {
+  margin: auto;
+}
+.btn-outline-success:active {
+  background-color: aqua;
+}
+.fon {
+  background-image: url("fonKat.jpg");
+  /* background-repeat: round; */
+  background-size: cover;
+  /* height: 100%; */
+  min-height: 100%;
+}
+.fonMain {
+  background-image: url("https://kalix.club/uploads/posts/2022-12/1671531824_kalix-club-p-oboi-geksagon-pinterest-14.jpg");
+  background-size: cover;
+}
+.text-muted {
+  font-weight: 400;
+  color: #d5d5ff !important;
+}
+.text-muted::first-letter {
+  color: red;
+}
+.footer {
+  background-color: rgba(85, 71, 82, 0.4);
+  text-align: right;
+}
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+.conte {
+  border-color: blue;
+}
+.el {
+  background-color: brown;
+}
+.gridContainer {
+  display: grid;
+  /* position: absolute;
+  right: 10px; */
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 150px 200px 150px;
+}
+.box {
+  background-color: aqua;
+}
